@@ -918,194 +918,108 @@ section {
     font-size: 1.1rem;
   }
 }
-
 .team {
-  padding: 5rem 2rem;
-  background-color: #f5f5f5;
-}
-
-.team span {
-  color: #2597f4;
+  padding: 3rem 10%;
+  text-align: center;
 }
 
 .team .heading {
-  text-align: center;
   font-size: 3rem;
-  margin-bottom: 3rem;
-  color: #333;
+  margin-bottom: 2rem;
+  color: #334;
+}
+
+.team .heading span {
+  color: #2597f4;
 }
 
 .team .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  justify-items: center;
-  place-items: center;
-  padding-bottom: 40px;
-  width: 20%;
-  height: 50%;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
 }
 
-.team .box-container .box {
-  position: relative;
+.team .box {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
   text-align: center;
-  border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer;
 }
 
-.team .box-container .box:hover {
+.team .box:hover {
   transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-.team .box-container .box img {
+.team .box img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-  transition: opacity 0.3s ease-in-out;
+  height: auto;
+  border-bottom: 2px solid #2597f4;
 }
 
-.team .box-container .box .content {
+.team .content {
   padding: 1.5rem;
-  background-color: #fff;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transition: bottom 0.3s ease;
 }
 
-.team .box-container .box:hover .content {
-  bottom: 0;
-}
-
-.team .box-container .box .content h3 {
+.team .content h3 {
   font-size: 1.8rem;
-  color: #333;
+  color: #334;
   margin-bottom: 0.5rem;
 }
 
-.team .box-container .box .content p {
-  font-size: 1.2rem;
-  color: #777;
+.team .content p {
+  font-size: 1.4rem;
+  color: #666;
   margin-bottom: 1rem;
 }
 
-.team .box-container .box .content .share a {
-  display: inline-block;
+.team .share {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.team .share a {
   font-size: 1.5rem;
-  color: #fff;
-  background-color: #334;
+  color: #334;
+  background: #f7f7f7;
+  padding: 0.7rem;
   border-radius: 50%;
-  padding: 1rem;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-.team .box-container .box .content .share a:hover {
-  background-color: #2597f4;
+.team .share a:hover {
+  background: #2597f4;
+  color: #fff;
 }
 
-/* Responsive Styles */
-
-/* Small Screens (Mobile) */
-@media (max-width: 480px) {
-  .team .heading {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .team .box-container {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .team .box-container .box {
-    width: 100%;
-    border-radius: 8px;
-  }
-
-  .team .box-container .box .content {
-    padding: 1rem;
-  }
-
-  .team .box-container .box .content h3 {
-    font-size: 1.6rem;
-  }
-
-  .team .box-container .box .content p {
-    font-size: 1rem;
-  }
-
-  .team .box-container .box .content .share a {
-    padding: 0.8rem;
-    font-size: 1.3rem;
-  }
-}
-
-/* Tablets and Medium Screens */
+/* Responsive Design */
 @media (max-width: 768px) {
   .team .heading {
     font-size: 2.5rem;
-    margin-bottom: 2.5rem;
   }
 
-  .team .box-container {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .team .box-container .box {
-    width: 100%;
-  }
-
-  .team .box-container .box .content {
-    padding: 1.3rem;
-  }
-
-  .team .box-container .box .content h3 {
-    font-size: 1.7rem;
-  }
-
-  .team .box-container .box .content p {
-    font-size: 1.1rem;
-  }
-
-  .team .box-container .box .content .share a {
-    padding: 1rem;
-    font-size: 1.4rem;
-  }
-}
-
-/* Larger Screens (Desktop) */
-@media (min-width: 1024px) {
-  .team .heading {
-    font-size: 3rem;
-    margin-bottom: 3rem;
-  }
-
-  .team .box-container {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
-  }
-
-  .team .box-container .box .content {
-    padding: 2rem;
-  }
-
-  .team .box-container .box .content h3 {
-    font-size: 2rem;
-  }
-
-  .team .box-container .box .content p {
-    font-size: 1.4rem;
-  }
-
-  .team .box-container .box .content .share a {
-    padding: 1.2rem;
+  .team .content h3 {
     font-size: 1.6rem;
+  }
+
+  .team .content p {
+    font-size: 1.3rem;
+  }
+
+  .team .share a {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+  }
+  .team .box-container{
+    display: flex;
   }
 }
 

@@ -11,6 +11,7 @@
   text-decoration: none;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
+  /* overflow: hidden; */
 }
 
 html {
@@ -18,6 +19,7 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 6rem;
+  width: 100%;
 }
 
 html::-webkit-scrollbar {
@@ -25,7 +27,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 html::-webkit-scrollbar-thumb {
@@ -938,7 +940,10 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   justify-items: center;
+  place-items: center;
   padding-bottom: 40px;
+  width: 20%;
+  height: 50%;
 }
 
 .team .box-container .box {
@@ -1298,7 +1303,6 @@ section {
   align-items: flex-start;
 }
 
-/* Map Styles */
 .contact .map {
   flex: 1 1 50%;
   height: 450px;

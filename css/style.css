@@ -1082,7 +1082,7 @@ nav li:first-child{
   font-size: 1.5rem;
   color: #334;
   background: #f7f7f7;
-  padding: 0.7rem;
+  padding: 0.9rem;
   border-radius: 50%;
   transition: background 0.3s ease, color 0.3s ease;
 }
@@ -1090,6 +1090,13 @@ nav li:first-child{
 .team .share a:hover {
   background: #2597f4;
   color: #fff;
+}
+
+.fa-x-twitter::before {
+  content: "X";
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 /* Responsive Design */

@@ -1096,7 +1096,7 @@ nav li:first-child{
   content: "X";
   font-family: Arial, sans-serif;
   font-weight: bold;
-  font-size: 18px;
+  /* font-size: 10px; */
 }
 
 /* Responsive Design */

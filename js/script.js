@@ -1,21 +1,24 @@
-let menu = document.querySelector("#menu-btn");
-let navbarLinks = document.querySelector(".header .navbar .links");
 
-menu.onclick = () => {
-  menu.classList.toggle("fa-times");
-  navbarLinks.classList.toggle("active");
-};
+function toggleSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  const menuButton = document.querySelector('.menu-button a i'); // Font Awesome icon
 
-window.onscroll = () => {
-  menu.classList.remove("fa-times");
-  navbarLinks.classList.remove("active");
-
-  if (window.scrollY > 60) {
-    document.querySelector(".header .navbar").classList.add("active");
+  if (sidebar.style.display === 'flex') {
+    sidebar.style.display = 'none';
+    menuButton.classList.replace('fa-times', 'fa-bars'); // Switch back to hamburger
   } else {
-    document.querySelector(".header .navbar").classList.remove("active");
+    sidebar.style.display = 'flex';
+    menuButton.classList.replace('fa-bars', 'fa-times'); // Switch to X
   }
-};
+}
+
+function hideSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  const menuButton = document.querySelector('.menu-button a i'); // Font Awesome icon
+
+  sidebar.style.display = 'none';
+  menuButton.classList.replace('fa-times', 'fa-bars'); // Ensure hamburger is restored
+}
 
 let currentIndex = 0;
 const slides = document.querySelectorAll(".slider .slide");

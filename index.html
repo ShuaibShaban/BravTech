@@ -68,6 +68,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQ6JAKcoA2fKzmsA3fW7Lmhpu5Qd7P4Va6goPkh2vpUqZL9KczUe2bNhP"
+      crossorigin="anonymous"
+    />
 
     <!-- custom css file link -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -149,23 +155,29 @@
         </p>
       </div>
 
-      <nav class="navbar">
-        <!-- <img
-          src="images/Bravtech-removebg-preview.png"
-          alt="BravTech Logo"
-          class="logo-img"
-        /> -->
-        <div class="links">
-          <a href="#home">home</a>
-          <a href="#about">about</a>
-          <a href="#services">services</a>
-          <a href="#gallery">gallery</a>
-          <a href="#team">team</a>
-          <a href="#reviews">reviews</a>
-          <a href="#contact">contact</a>
-        </div>
-
-        <div id="menu-btn" class="fa fa-bars"></div>
+      <nav class="fixed-top">
+        <ul class="sidebar">
+          <li onclick="hideSidebar()">
+            <a href="#"><i class="fas fa-times"></i></a>
+          </li>
+          <!-- X button -->
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">BravTech</a></li>
+          <li class="hideOnMobile"><a href="#home">Home</a></li>
+          <li class="hideOnMobile"><a href="#about">About</a></li>
+          <li class="hideOnMobile"><a href="#services">Services</a></li>
+          <li class="hideOnMobile"><a href="#gallery">Gallery</a></li>
+          <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+          <li class="menu-button" onclick="toggleSidebar()">
+            <a href="#"><i class="fas fa-bars"></i></a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -175,11 +187,11 @@
 
     <section class="home" id="home">
       <div class="image">
-        <img src="images/home-img.svg" alt="" />
+        <img src="images/home-img.svg" alt="Repair Services" />
       </div>
 
       <div class="content">
-        <h3>Why Choose Professional Repair Services?</h3>
+        <h3>why choose Professional Repair Services?</h3>
         <p>
           When it comes to repairs, why take unnecessary risks? Trusting
           experienced professionals ensures your job gets done correctly. Our
@@ -361,7 +373,10 @@
           <img src="images/why-choose-icon-1.svg" alt="" />
           <h3>24/7 Support</h3>
           <p>
-            Our dedicated support team is available 24/7 to assist you with any technical issues. Whether it's day or night, we're always here to help you keep your devices running smoothly. No matter the time, you can count on us for timely solutions and assistance.
+            Our dedicated support team is available 24/7 to assist you with any
+            technical issues. Whether it's day or night, we're always here to
+            help you keep your devices running smoothly. No matter the time, you
+            can count on us for timely solutions and assistance.
           </p>
         </div>
 
@@ -369,7 +384,10 @@
           <img src="images/why-choose-icon-2.svg" alt="" />
           <h3>Quality Service</h3>
           <p>
-            We prioritize excellence in every service we provide. Our experienced technicians ensure that every device repair is completed with the highest standards of quality and care. We take pride in delivering reliable solutions that you can trust.
+            We prioritize excellence in every service we provide. Our
+            experienced technicians ensure that every device repair is completed
+            with the highest standards of quality and care. We take pride in
+            delivering reliable solutions that you can trust.
           </p>
         </div>
 
@@ -377,7 +395,10 @@
           <img src="images/why-choose-icon-3.svg" alt="" />
           <h3>Quick Repair</h3>
           <p>
-            When you need a quick turnaround, we’ve got you covered. Our expert technicians work efficiently to repair your mobile device and minimize downtime. We believe in getting your device back to you fast without compromising on the quality of service.
+            When you need a quick turnaround, we’ve got you covered. Our expert
+            technicians work efficiently to repair your mobile device and
+            minimize downtime. We believe in getting your device back to you
+            fast without compromising on the quality of service.
           </p>
         </div>
       </div>
@@ -404,6 +425,7 @@
             </div>
           </div>
         </div>
+      </div>
     </section>
 
     <!-- team section ends -->
@@ -505,13 +527,14 @@
 
       <div class="row">
         <iframe
-        class="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.9359607172223!2d36.91056086998862!3d-1.2050134328277067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3fcc4fa7df9d%3A0xa1657f65d172687f!2sRiflo%20Building%20Solutions!5e0!3m2!1sen!2ske!4v1737188733355!5m2!1sen!2ske"
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5079.678099598087!2d36.820667214121436!3d-1.2822923575993184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11d61acadb41%3A0x814029370293f39b!2sIconic%20plaza%20by%20YUCCA%20SOUND%C2%B0!5e0!3m2!1sen!2ske!4v1737451500402!5m2!1sen!2ske"
+          allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
 
-        <form action="https://formspree.io/f/myzgagno" method="POST">
+        <form action="https://formspree.io/f/xnnneppq" method="POST">
           <h3>Get in Touch</h3>
           <div class="inputBox">
             <input type="text" name="name" placeholder="Name" required />

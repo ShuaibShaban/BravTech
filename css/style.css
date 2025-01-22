@@ -1234,10 +1234,17 @@ nav li:first-child{
 }
 
 .user img {
-  height: 7rem;
-  width: 7rem;
+  object-fit: cover;
+  height: 15rem;
+  width: 13.5rem;
   border-radius: 50%;
-  margin-bottom: 1rem;
+  /* border: 4px solid #ff6600; */
+  /* box-shadow: 0 0 10px rgba(255, 102, 0, 0.5); */
+  transition: transform 0.3s ease-in-out;
+}
+
+.user img:hover {
+  transform: scale(1.05);
 }
 
 .user h3 {

@@ -461,6 +461,7 @@ nav li:first-child{
   .fun-fact {
     padding: 3rem 1rem;
     grid-template-columns: 1fr 1fr;
+    display: block;
   }
 
   .fun-fact .box {

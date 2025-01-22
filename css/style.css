@@ -237,7 +237,7 @@ nav li:first-child{
   gap: 2rem;
   padding: 4rem 2rem;
   border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
 }
 
 .home .image {
@@ -459,13 +459,18 @@ nav li:first-child{
 
 @media (max-width: 768px) {
   .fun-fact {
-    padding: 3rem 1rem;
-    grid-template-columns: 1fr 1fr;
-    display: block;
+    padding: 3rem;
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem; /* Add gap for smaller screens */
+    display: grid; /* Ensure it remains a grid layout */
   }
 
   .fun-fact .box {
     padding: 1.5rem;
+  }
+
+  .fun-fact .box .info {
+    gap: 50px;
   }
 
   .fun-fact .box h3 {
@@ -478,6 +483,11 @@ nav li:first-child{
 }
 
 @media (max-width: 480px) {
+  .fun-fact {
+    grid-template-columns: 1fr; 
+    gap: 1.5rem; 
+  }
+
   .fun-fact .box h3 {
     font-size: 2rem;
   }
@@ -486,6 +496,7 @@ nav li:first-child{
     font-size: 1.3rem;
   }
 }
+
 
 .about {
   display: flex;

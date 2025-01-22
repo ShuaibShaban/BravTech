@@ -1521,7 +1521,7 @@ nav li:first-child{
   border-top: 0.1rem solid #444;
 }
 
-.footer .credit span {
+.footer .credit a {
   color: #00bcd4;
   font-weight: bold;
 }

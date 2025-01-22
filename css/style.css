@@ -252,6 +252,7 @@ nav li:first-child{
   width: 100%;
   max-width: 400px;
   transition: transform 0.4s ease;
+  border-radius: 20px;
 }
 
 .home .image img:hover {
@@ -263,7 +264,7 @@ nav li:first-child{
   padding: 2rem;
   background: #ffffff;
   border-radius: 15px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); */
   animation: slideIn 1.2s ease-in-out;
 }
 
@@ -500,7 +501,7 @@ nav li:first-child{
   flex: 1 1 50%;
   opacity: 0;
   animation: fadeInLeft 1s ease-out 0.2s forwards;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); */
   padding: 20px;
   border-radius: 10px;
 }
